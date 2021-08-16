@@ -1,0 +1,146 @@
+@import "global";
+@import "reset";
+@import "var";
+@import "mixin";
+
+// HEADER
+#header {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	.nav-container {
+		@include flexsbcen();
+		margin: 23px auto;
+	}
+	.header-logo {
+		@media screen and (max-width: 575px) {
+			max-width: 149.15px;
+		}
+	}
+	.navbar-group {
+		margin-left: auto;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+		.navbar-item {
+			display: inline-block;
+			padding: 10px;
+			a {
+				color: $white;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 20px;
+
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+			}
+			&:hover a {
+				color: $grey6d;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+	.navbar-group .navbar-item + .navbar-item {
+		margin-left: 30px;
+	}
+	.navbar-icon {
+		font-size: 24px !important;
+		color: $white;
+		margin-left: 40px;
+	}
+	.icon-search {
+		@media screen and (max-width: 767px) {
+			margin-left: auto;
+		}
+	}
+	.icon-menu {
+		display: none;
+		@media screen and (max-width: 767px) {
+			display: block;
+			margin-left: 17px;
+		}
+	}
+}
+// SECTION
+// SLIDER
+#slider {
+	position: relative;
+	z-index: 1;
+	background: url(/Exercise/EX7_recode/assets/img/image-silder.png) top center/cover
+		no-repeat;
+	.slider__content {
+		padding-top: 186px;
+		padding-bottom: 146px;
+		@media screen and (max-width: 767px) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+		@media screen and (max-width: 575px) {
+			padding-top: 78px;
+			padding-bottom: 78px;
+		}
+		h1 {
+			color: $white;
+			max-width: 497px;
+			text-align: center;
+			margin: auto;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 62px;
+			line-height: 76px;
+
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			@media screen and (max-width: 767px) {
+				font-size: 40px;
+				line-height: 49px;
+			}
+			@media screen and (max-width: 575px) {
+				font-size: 32px;
+				line-height: 39px;
+			}
+		}
+		p {
+			color: $white;
+			max-width: 680px;
+			margin: 32px auto 44px auto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 30px;
+
+			text-align: center;
+			@media screen and (max-width: 768px) {
+				font-size: 16px;
+				line-height: 26px;
+			}
+			@media screen and (max-width: 575px) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		.btn {
+			display: block;
+			border: 1px solid $white;
+			background: transparent;
+			padding: 14px 44px;
+			margin: auto;
+			a {
+				color: $white;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 22px;
+
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.slider-mask {
+		width: 100%;
+		position: absolute;
+		bottom: -1px;
+	}
+}
