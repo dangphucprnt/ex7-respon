@@ -121,7 +121,7 @@ a {
 #slider {
   position: relative;
   z-index: 1;
-  background: url(/Exercise/EX7_recode/assets/img/image-silder.png) top center/cover no-repeat;
+  background: url(/Exercise/EX7-respon/assets/img/image-silder.png) top center/cover no-repeat;
 }
 
 #slider .slider__content {
