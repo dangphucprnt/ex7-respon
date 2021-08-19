@@ -8,6 +8,30 @@
   margin: auto;
 }
 
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 752px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 572px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}
+
 ul li {
   list-style-type: none;
 }

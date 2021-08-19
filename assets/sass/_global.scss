@@ -6,6 +6,19 @@
 	max-width: 1172px;
 	padding: 0 16px;
 	margin: auto;
+
+	@media screen and (max-width: 1199px) {
+		max-width: 992px;
+	}
+	@media screen and (max-width: 991px) {
+		max-width: 752px;
+	}
+	@media screen and (max-width: 767px) {
+		max-width: 572px;
+	}
+	@media screen and (max-width: 575px) {
+		width: 100%;
+	}
 }
 
 ul li {
